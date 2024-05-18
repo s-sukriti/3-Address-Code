@@ -1,18 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Conversion Result</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversion Result</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #EEF7FF;
+    }
+
+    h1, h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 30px;
+      color: #4D869C;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 20px auto;
+      width: 60%;
+    }
+
+    li {
+      background-color: #F2F7FF;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    a {
+      display: inline-block; 
+      text-align: center;
+      padding: 5px 10px; 
+      background-color: #4D869C;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      margin-top: 20px;
+    }
+
+    a:hover {
+      background-color: #9FB3C4;
+    }
+
+   
+    p {
+      text-align: center;  
+    }
+  </style>
 </head>
 <body>
-    <h1>Conversion Result</h1>
-    <h2>Postfix Expression</h2>
-    <p>{{ postfix }}</p>
-    <h2>Three-Address Code</h2>
-    <ul>
-        {% for line in code %}
-            <li>{{ line }}</li>
-        {% endfor %}
-    </ul>
-    <a href="/">Back</a>
+  <h1>Conversion Result</h1>
+  <h2>Postfix Expression</h2>
+  <p>{{ postfix }}</p>
+  <h2>Three-Address Code</h2>
+  <ul>
+    {% for line in code %}
+      <li>{{ line }}</li>
+    {% endfor %}
+  </ul>
+  <center>
+  <a href=  "/"> Back</a>
+  </center>
 </body>
 </html>
