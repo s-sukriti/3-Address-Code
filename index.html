@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Expression Converter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expression Converter</title>
+  <style>
+    body {
+      font-family: sans-serif;  
+      margin: 0; 
+      padding: 0; 
+      background-color: #EEF7FF; 
+    }
+
+    h1 {
+      text-align: center; 
+      font-size: 2em; 
+      color: #4D869C;  
+      margin-top: 50px;  
+    }
+
+    form {
+      display: flex; 
+      justify-content: center;  
+      align-items: center;  
+      margin: 50px auto;   
+      width: 50%;  
+      padding: 10px; 
+      border-radius: 5px;  
+      background-color: #F2F7FF;  
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    label {
+      margin-right: 10px;  
+    }
+
+    input[type="text"] {
+      padding: 5px; 
+      border: 1px solid #CCC; 
+      border-radius: 3px; 
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;  
+      background-color: #4D869C;  
+      color: white;  
+      border: none; 
+      border-radius: 5px;  
+      cursor: pointer;  
+      transition: background-color 0.2s ease-in-out;  
+    }
+
+    input[type="submit"]:hover {
+      background-color: #9FB3C4; 
+    }
+  </style>
 </head>
 <body>
-    <h1>Enter an Expression</h1>
-    <form action="/generate" method="post">
-        <label for="expression">Expression:</label>
-        <input type="text" id="expression" name="expression">
-        <input type="submit" value="Convert">
-    </form>
+  <h1>Enter an Expression</h1>
+  <form action="/generate" method="post">
+    <label for="expression">Expression:</label>
+    <input type="text" id="expression" name="expression">
+    <input type="submit" value="Convert">
+  </form>
 </body>
 </html>
