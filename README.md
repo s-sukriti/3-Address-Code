@@ -1,4 +1,6 @@
-# CDSS-Mini
+# 3 Address Code Generator
+
+(CDSS Mini Project)
 
 To run:
 - pip install virtualenv
